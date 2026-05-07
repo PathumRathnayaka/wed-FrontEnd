@@ -70,7 +70,16 @@ export default function InvitationPage() {
     if (!data) return null;
 
     return (
-        <main className="min-h-screen bg-cream selection:bg-gold selection:text-ivory">
+        <main className="relative min-h-screen bg-cream selection:bg-gold selection:text-ivory overflow-hidden">
+            {/* Top Right Full Page Flower Decoration */}
+            <div className="fixed top-0 right-0 w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[40rem] lg:h-[40rem] pointer-events-none z-0">
+                <img
+                    src="/image/flower.png"
+                    alt="Floral corner decoration"
+                    className="w-full h-full object-contain object-right-top opacity-90 mix-blend-multiply"
+                />
+            </div>
+
             <AnimatePresence>
                 {!isOpened && (
                     <OpeningScreen
