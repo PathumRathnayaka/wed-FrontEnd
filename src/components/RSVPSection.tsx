@@ -27,7 +27,7 @@ export default function RSVPSection({ rsvpStatus, onRSVP }: RSVPSectionProps) {
     };
 
     return (
-        <section className="bg-wedding-green px-6 py-20 text-center text-ivory">
+        <section className="bg-cream px-6 py-20 text-center text-wedding-green">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function RSVPSection({ rsvpStatus, onRSVP }: RSVPSectionProps) {
                 className="mx-auto max-w-sm"
             >
                 <h3 className="mb-4 text-sm tracking-[0.3em] text-gold">RSVP</h3>
-                <p className="mb-12 font-light italic text-ivory/70">
+                <p className="mb-12 font-light italic text-wedding-green/70">
                     Will you join us in our special day?
                 </p>
 
@@ -52,7 +52,7 @@ export default function RSVPSection({ rsvpStatus, onRSVP }: RSVPSectionProps) {
                             <button
                                 disabled={loading}
                                 onClick={() => handleRsvp('declined')}
-                                className="flex items-center justify-center gap-2 rounded-lg border border-ivory/30 bg-transparent py-4 text-sm font-bold tracking-widest text-ivory transition-all active:scale-95 disabled:opacity-50"
+                                className="flex items-center justify-center gap-2 rounded-lg border border-wedding-green/30 bg-transparent py-4 text-sm font-bold tracking-widest text-wedding-green transition-all hover:bg-wedding-green/5 active:scale-95 disabled:opacity-50"
                             >
                                 <X className="h-4 w-4" /> SORRY, I CAN'T MAKE IT
                             </button>
@@ -61,7 +61,7 @@ export default function RSVPSection({ rsvpStatus, onRSVP }: RSVPSectionProps) {
                         <motion.div
                             initial={{ scale: 0.9, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
-                            className="rounded-lg bg-ivory/10 p-8"
+                            className="rounded-lg bg-white/60 border border-gold/30 shadow-sm p-8"
                         >
                             <p className="mb-2 text-xl font-medium tracking-wide">
                                 {currentRsvp === 'accepted' ? 'See you there!' : "We'll miss you!"}

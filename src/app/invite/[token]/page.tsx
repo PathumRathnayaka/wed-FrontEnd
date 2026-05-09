@@ -75,7 +75,16 @@ export default function InvitationPage() {
             <div className="fixed top-0 right-0 w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[40rem] lg:h-[40rem] pointer-events-none z-0">
                 <img
                     src="/image/flower.png"
-                    alt="Floral corner decoration"
+                    alt="Floral corner decoration top right"
+                    className="w-full h-full object-contain object-right-top opacity-90 mix-blend-multiply"
+                />
+            </div>
+
+            {/* Bottom Left Full Page Flower Decoration (Flipped) */}
+            <div className="fixed bottom-0 left-0 w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[40rem] lg:h-[40rem] pointer-events-none z-0 rotate-180">
+                <img
+                    src="/image/flower.png"
+                    alt="Floral corner decoration bottom left"
                     className="w-full h-full object-contain object-right-top opacity-90 mix-blend-multiply"
                 />
             </div>
