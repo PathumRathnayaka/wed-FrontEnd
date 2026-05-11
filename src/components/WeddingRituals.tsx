@@ -33,7 +33,7 @@ export default function WeddingRituals({ rituals }: WeddingRitualsProps) {
                     transition={{ duration: 0.8 }}
                 >
                     <span className="mb-4 block text-[10px] font-bold tracking-[0.5em] text-gold uppercase">
-                        Our Sequence of Events
+                        Sequence of Events
                     </span>
                     <h2 className="script-font mb-16 text-4xl text-wedding-green md:text-6xl">
                         Wedding Rituals

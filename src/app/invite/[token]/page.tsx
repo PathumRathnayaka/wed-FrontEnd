@@ -130,7 +130,7 @@ export default function InvitationPage() {
                     onRSVP={(response) => submitRSVP(token as string, response).then(() => { })}
                 />
 
-                <footer className="bg-ivory py-12 text-center">
+                <footer className="bg-ivory pt-6 pb-20 text-center">
                     <p className="script-font text-2xl text-gold mb-2">Thank You</p>
                     <p className="text-[10px] tracking-[0.4em] text-wedding-green uppercase opacity-40">
                         For Being Part of Our Story
