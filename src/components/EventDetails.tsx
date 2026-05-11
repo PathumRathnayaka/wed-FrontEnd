@@ -84,14 +84,16 @@ export default function EventDetails({ date, time, venue, locationMapUrl }: Even
                             {venue}
                         </p>
                         {locationMapUrl && (
-                            <a
+                            <motion.a
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
                                 href={locationMapUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-2 text-xs font-bold tracking-widest text-gold hover:opacity-70"
+                                className="mt-4 inline-block px-6 py-2 text-[10px] font-bold tracking-[0.2em] text-gold border border-gold/30 rounded-full hover:bg-gold hover:text-white transition-all duration-300"
                             >
                                 VIEW ON MAP
-                            </a>
+                            </motion.a>
                         )}
                     </div>
                 </div>
