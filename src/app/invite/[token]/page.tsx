@@ -10,6 +10,7 @@ import EventDetails from '@/components/EventDetails';
 import GallerySection from '@/components/GallerySection';
 import RSVPSection from '@/components/RSVPSection';
 import MusicPlayer from '@/components/MusicPlayer';
+import WeddingRituals from '@/components/WeddingRituals';
 import { HeartOff } from 'lucide-react';
 
 export default function InvitationPage() {
@@ -110,6 +111,10 @@ export default function InvitationPage() {
                     message={data.message}
                     theme={data.theme}
                 />
+
+                {data.showRituals && data.rituals && data.rituals.length > 0 && (
+                    <WeddingRituals rituals={data.rituals} />
+                )}
 
                 <EventDetails
                     date={data.eventDate}

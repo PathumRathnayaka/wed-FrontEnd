@@ -12,6 +12,8 @@ export interface InvitationData {
     galleryImages?: string[];
     musicUrl?: string;
     primaryColor?: string;
+    showRituals?: boolean;
+    rituals?: { title: string; time: string }[];
     fontStyle?: string;
     locationMapUrl?: string;
     dressCode?: string;
