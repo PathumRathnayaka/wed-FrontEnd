@@ -82,7 +82,7 @@ export default function OpeningScreen({
                                 delay: 0.2,
                                 duration: 1.2,
                             }}
-                            className="relative mb-4 w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]"
+                            className="relative mb-4 w-[150px] sm:w-[200px] md:w-[250px] lg:w-[200px]"
                         >
                             <Image
                                 src="/image/couple.webp"
