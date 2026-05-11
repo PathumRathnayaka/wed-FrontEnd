@@ -9,15 +9,20 @@ interface InvitationCardProps {
     theme?: string;
 }
 
-export default function InvitationCard({ guestName, coupleName, message, theme }: InvitationCardProps) {
+export default function InvitationCard({
+    guestName,
+    coupleName,
+    message,
+    theme,
+}: InvitationCardProps) {
     return (
-        <section className="relative px-6 py-16 text-center">
+        <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 pb-16 text-center md:pt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="mx-auto max-w-md"
+                className="mx-auto flex max-w-md flex-col justify-center"
             >
                 <p className="mb-6 text-sm italic tracking-widest text-gold opacity-80">
                     Dear {guestName},
@@ -29,9 +34,11 @@ export default function InvitationCard({ guestName, coupleName, message, theme }
 
                 <div className="mb-12 flex items-center justify-center gap-4">
                     <div className="h-[1px] w-12 bg-gold opacity-30" />
+
                     <h1 className="text-2xl font-bold tracking-[0.2em] text-wedding-green">
                         {coupleName}
                     </h1>
+
                     <div className="h-[1px] w-12 bg-gold opacity-30" />
                 </div>
 
@@ -41,9 +48,16 @@ export default function InvitationCard({ guestName, coupleName, message, theme }
 
                 {theme === 'floral' && (
                     <div className="mt-8 text-gold opacity-20">
-                        {/* Simple floral decoration placeholder */}
-                        <svg viewBox="0 0 100 20" className="mx-auto w-32 fill-current">
-                            <path d="M0,10 Q25,0 50,10 T100,10" fill="none" stroke="currentColor" strokeWidth="0.5" />
+                        <svg
+                            viewBox="0 0 100 20"
+                            className="mx-auto w-32 fill-current"
+                        >
+                            <path
+                                d="M0,10 Q25,0 50,10 T100,10"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="0.5"
+                            />
                         </svg>
                     </div>
                 )}
