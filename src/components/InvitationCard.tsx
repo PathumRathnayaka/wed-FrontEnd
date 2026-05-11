@@ -16,7 +16,7 @@ export default function InvitationCard({
     theme,
 }: InvitationCardProps) {
     return (
-        <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 pb-16 text-center md:pt-20">
+        <section className="relative flex min-h-screen items-center justify-center px-6 pt-20 pb-16 text-center md:pt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
