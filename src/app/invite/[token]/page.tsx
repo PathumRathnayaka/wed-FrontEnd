@@ -72,6 +72,10 @@ export default function InvitationPage() {
 
     return (
         <main className="relative min-h-screen bg-cream selection:bg-gold selection:text-ivory overflow-hidden">
+            {/* Content Masking Overlays */}
+            <div className="fixed top-0 left-0 right-0 h-40 bg-gradient-to-b from-cream to-transparent z-30 pointer-events-none" />
+            <div className="fixed bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-cream to-transparent z-30 pointer-events-none" />
+
             {/* Top Right Full Page Flower Decoration */}
             <div className="fixed top-0 right-0 w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[40rem] lg:h-[40rem] pointer-events-none z-40">
                 <img
