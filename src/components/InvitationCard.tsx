@@ -32,14 +32,14 @@ export default function InvitationCard({
                     We are getting married!
                 </h2>
 
-                <div className="mb-12 flex items-center justify-center gap-4">
-                    <div className="h-[1px] w-12 bg-gold opacity-30" />
+                <div className="mb-12 flex items-center justify-center gap-2 md:gap-4">
+                    <div className="h-[1px] w-8 md:w-12 bg-gold opacity-30" />
 
-                    <h1 className="text-2xl font-bold tracking-[0.2em] text-wedding-green">
+                    <h1 className="whitespace-nowrap text-xl font-bold tracking-[0.2em] text-wedding-green md:text-2xl">
                         {coupleName}
                     </h1>
 
-                    <div className="h-[1px] w-12 bg-gold opacity-30" />
+                    <div className="h-[1px] w-8 md:w-12 bg-gold opacity-30" />
                 </div>
 
                 <p className="playfair-font leading-relaxed text-wedding-green/80">
